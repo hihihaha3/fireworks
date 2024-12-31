@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+}
+#container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://png.pngtree.com/background/20210711/original/pngtree-white-antique-chinese-style-ink-background-picture-image_1147294.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+h1 {
+  margin: 0;
+}
+a {
+  color: rgb(231, 12, 12); /* Màu chữ */
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+.snow {
+  position: absolute;
+  top: 0;
+  left: o;
+  height: 50px;
+  width: 50px;
+  background-image: url(./Remove.png);
+  background-size: cover;
+  animation: leftsnow 4s ease-in-out infinite;
+}
+@keyframes leftsnow {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(100px, 50vh);
+  }
+}
